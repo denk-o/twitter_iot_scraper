@@ -2,6 +2,7 @@
 import concurrent.futures
 import time
 import os
+import twitter
 
 class scraper():
     def __init__(self):
@@ -13,6 +14,12 @@ class scraper():
 
     def getTweetsWithHashtag(self, hashtag):
         #get tweets with a hashtag specified as input
+        tweets = []
+        return tweets
 
-    def writeTweetsToCSV(self):
+    def writeTweetsToCSV(self, tweets):
         #write tweets to a csv
+        return None
+
+
+sc = scraper()

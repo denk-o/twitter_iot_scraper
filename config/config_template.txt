@@ -1,0 +1,5 @@
+#Placeholder, rename to config.ini
+
+[API]
+  api_key = [your api key]
+  secret = [your api secret] 

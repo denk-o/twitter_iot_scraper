@@ -8,6 +8,7 @@ import config
 import twitter
 import tweepy
 import csv
+import sys
 
 class scraper():
     def __init__(self):
@@ -82,3 +83,4 @@ sc.getTweetsWithIoT()
 print('thread start')
 sc.writeTweets()
 print('task complete')
+sys.exit()

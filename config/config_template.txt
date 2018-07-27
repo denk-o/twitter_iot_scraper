@@ -2,4 +2,5 @@
 
 [API]
   api_key = [your api key]
-  secret = [your api secret] 
+  secret = [your api secret]
+  access_key = [your access key]

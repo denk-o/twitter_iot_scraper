@@ -32,8 +32,8 @@ class scraper():
     def buildDir(self):
         if not os.path.isdir('csv_results/'):
             os.mkdir('csv_results/')
-        if not os.path.isfile('csv_results/results.csv'):
-            open('results.csv', 'w').close()
+        if os.path.isfile('csv_results/results.csv'):
+            os.remove('csv_results/results.csv')
 
     def getTweetsWithIoT(self):
         counter = 0
@@ -56,7 +56,7 @@ class scraper():
 
     def writeTweetToCSV(self, tweet):
         #write tweets to a csv
-        csvFile = open('results.csv', 'a')
+        csvFile = open('csv_results/results.csv', 'a')
         writer = csv.writer(csvFile)
 
         writer.writerow([tweet.text])
